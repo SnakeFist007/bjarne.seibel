@@ -238,7 +238,7 @@ img {
 
 /* Design for smaller screens */
 @media (max-width: 1350px) {
-    wrapper {
+    .wrapper {
       margin: 0;
       min-height: 100vh;
       display: grid;
