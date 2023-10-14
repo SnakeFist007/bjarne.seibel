@@ -60,7 +60,8 @@ h1 small::before {
   content: "-";
 }
 
-h4 {
+h4, h5 {
+  font-size: 1rem;
   padding: 0.5rem 1rem;
   background-color: #4D493E;
   color: #C8C2AA;
@@ -69,9 +70,23 @@ h4 {
   box-shadow: 4px 4px 0 rgba(77, 73, 62, 0.6);
 }
 
-h4 a {
+h4 a, h5 a {
   color: inherit;
   text-decoration: inherit;
+}
+
+h5 {
+  margin-bottom: -0.5em;
+}
+
+h6 {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #AFAA94;
+  color: #4D493E;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  box-shadow: 4px 4px 0 rgba(77, 73, 62, 0.6);
 }
 
 button {
@@ -149,6 +164,10 @@ img {
   max-width: 600px;
 }
 
+.right-content .less_spacing {
+  margin-top: -0.25em;
+}
+
 .content {
   padding: 0rem;
   padding-left: 3em;
@@ -163,8 +182,11 @@ img {
 }
 
 .ct-active {
-  font-weight: 600;
   background-image: linear-gradient(90deg, rgba(77, 73, 62, 0.75), rgba(77, 73, 62, 0.75) 14px, transparent 14px, transparent 20px, rgba(77, 73, 62, 0.75) 20px, rgba(77, 73, 62, 0.75) 23px, transparent 23px);
+}
+
+.bold_text {
+  font-weight: 600;
 }
 
 .line {
