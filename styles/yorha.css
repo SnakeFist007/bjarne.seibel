@@ -235,3 +235,65 @@ img {
 .lower {
   animation: scroll-right 5s linear infinite;
 }
+
+/* Design for smaller screens */
+@media (max-width: 1350px) {
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .container {
+      width: 100%;
+      position: relative;
+    }
+
+    .content-container {
+      width: 90%;
+      flex-direction: column; /* Stack content containers vertically on smaller screens */
+    }
+
+    .left-content, .right-content {
+        width: 100%; /* Full width for both left and right content on smaller screens */
+        margin: 1em; /* Add margin between content containers */
+    }
+
+    .right-content {
+        margin-left: 0; /* Remove left margin for right-content on smaller screens */
+    }
+
+    .content {
+        margin: 1em 0; /* Add margin between content blocks */
+        margin-left: 0.5em;
+        margin-top: 1.5em;
+    }
+
+    h1 {
+      margin-top: 0rem;
+    }
+
+    h2, h4{
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    h4 {
+      width: 105%;
+    }
+
+    h6 {
+      margin-top: 1.5em;
+      margin-bottom: -4em;
+    }
+
+    hr {
+      width: 90%;
+    }
+
+    /* Adjust button width for smaller screens */
+    button {
+        width: 100%;
+    }
+}
