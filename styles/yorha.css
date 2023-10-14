@@ -156,16 +156,12 @@ img {
   max-width: 300px;
   display: flex;
   margin-right: 1em;
-  margin-top: 1.25em;
+  margin-top: 1em;
 }
 
 .right-content {
   margin-left: 3em;
   max-width: 600px;
-}
-
-.right-content .less_spacing {
-  margin-top: -0.25em;
 }
 
 .content {
