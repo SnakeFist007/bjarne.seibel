@@ -24,12 +24,14 @@ body {
   flex-direction: column;
   letter-spacing: 0.1rem;
   justify-content: space-around;
+  cursor: url("https://snakefist007.github.io/bjarne-seibel/cursor/normal.cur"), auto;
 }
 
 
 /* Main elements */
 a {
   text-decoration: none;
+  cursor: url("https://snakefist007.github.io/bjarne-seibel/cursor/select.cur"), auto;
 }
 
 h1 {
@@ -98,6 +100,7 @@ button:hover, button:focus {
   color: #C8C2AA;
   border-color: #4D493E;
   box-shadow: 4px 4px 0 rgba(77, 73, 62, 0.6);
+  cursor: url("https://snakefist007.github.io/bjarne-seibel/cursor/select.cur"), auto;
 }
 
 button:hover::before, button:focus::before {
