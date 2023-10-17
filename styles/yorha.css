@@ -3,6 +3,12 @@
   outline: none !important;
 }
 
+/* Layout elements */
+header {
+  padding: 1rem 0;
+  margin-top: 0.5em;
+}
+
 body {
   background-color: #C8C2AA;
   background-size: 4px 4px;
@@ -17,27 +23,16 @@ body {
   min-height: 100vh;
   flex-direction: column;
   letter-spacing: 0.1rem;
-}
-
-main {
-  flex: 1;
-  display: flex;
   justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  height: 100%;
 }
 
-header {
+footer {
   padding: 1rem 0;
   margin-top: 0.5em;
 }
 
-hr {
-  border: 1px solid rgba(77, 73, 62, 0.5);
-  margin-top: 1.5em;
-}
 
+/* Main elements */
 h1 {
   text-transform: uppercase;
   font-weight: 300;
@@ -45,22 +40,7 @@ h1 {
   text-shadow: 0.3rem 0.3rem 0 rgba(77, 73, 62, 0.3);
 }
 
-h1 span {
-  margin-right: -0.7rem;
-}
-
-h1 small {
-  font-weight: 500;
-  text-transform: none;
-  text-shadow: none;
-  letter-spacing: 0.1rem;
-}
-
-h1 small::before {
-  content: "-";
-}
-
-h4, h5 {
+h3 {
   font-size: 1rem;
   padding: 0.5rem 1rem;
   background-color: #4D493E;
@@ -75,18 +55,10 @@ h4 a, h5 a {
   text-decoration: inherit;
 }
 
-h5 {
-  margin-bottom: -0.5em;
-}
-
-h6 {
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #AFAA94;
-  color: #4D493E;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  box-shadow: 4px 4px 0 rgba(77, 73, 62, 0.6);
+hr {
+  border: 1px solid rgba(77, 73, 62, 0.5);
+  margin-top: 1.5em;
+  max-width: 90%
 }
 
 button {
@@ -95,14 +67,16 @@ button {
   border: none;
   padding: 0.5rem 1rem;
   background-color: rgba(77, 73, 62, 0.35);
+  box-shadow: 4px 4px 0 rgba(77, 73, 62, 0.6);
   color: #4D493E;
   box-sizing: content-box;
   position: relative;
   border: 1px solid transparent;
   border-left: none;
   border-right: none;
+  margin: 0 auto;
   margin-top: 0.5em;
-  width: 90%;
+  width: 91%
 }
 
 button::before {
@@ -117,21 +91,12 @@ button::before {
   transition: width 0.2s;
 }
 
-button::after {
-  content: "";
-  display: none;
-  position: absolute;
-  background: #4D493E;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: -4px;
-}
 
 button:hover, button:focus {
   background-color: transparent;
   color: #C8C2AA;
   border-color: #4D493E;
+  box-shadow: 4px 4px 0 rgba(77, 73, 62, 0.6);
 }
 
 button:hover::before, button:focus::before {
@@ -140,34 +105,33 @@ button:hover::before, button:focus::before {
 
 img {
   box-shadow: 4px 4px 0 rgba(77, 73, 62, 0.6);
-}
-
-.container img {
-    max-width: 300px;
-}
-
-.content-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.left-content {
   max-width: 300px;
+}
+
+
+/* Special Layout */
+.container {
   display: flex;
-  margin-right: 1em;
-  margin-top: 1em;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 2000px;
+  padding: 20px;
 }
 
-.right-content {
-  margin-left: 3em;
-  max-width: 600px;
+.left-container, .middle-container, .right-container {
+  margin: 10px;
+  padding: 20px;
 }
 
+
+/* Content design */
 .content {
   padding: 0rem;
   padding-left: 3em;
   margin: 2rem;
+  margin-top: 1em;
   box-sizing: border-box;
   background-image: linear-gradient(90deg, rgba(77, 73, 62, 0.2), rgba(77, 73, 62, 0.2) 14px, transparent 14px, transparent 20px, rgba(77, 73, 62, 0.2) 20px, rgba(77, 73, 62, 0.2) 23px, transparent 23px);
 }
@@ -177,14 +141,15 @@ img {
   text-decoration: inherit;
 }
 
-.ct-active {
+.selected {
   background-image: linear-gradient(90deg, rgba(77, 73, 62, 0.75), rgba(77, 73, 62, 0.75) 14px, transparent 14px, transparent 20px, rgba(77, 73, 62, 0.75) 20px, rgba(77, 73, 62, 0.75) 23px, transparent 23px);
 }
 
-.bold_text {
+.bold {
   font-weight: 600;
 }
 
+/* Banner design */
 .line {
   border-top: 2px solid #4D493E;
   overflow: hidden;
@@ -206,90 +171,44 @@ img {
   width: 200%;
 }
 
-@keyframes scroll-left {
+@keyframes scroll {
   0% {
     transform: translateX(-50px);
   }
   100% {
     transform: translateX(-100px);
-  }
-}
-
-@keyframes scroll-right {
-  0% {
-    transform: translateX(-100px);
-  }
-  100% {
-    transform: translateX(-50px);
   }
 }
 
 .upper {
-  animation: scroll-left 5s linear infinite;
+  animation: scroll 5s linear infinite;
 }
 
 .lower {
-  animation: scroll-right 5s linear infinite;
+  animation: scroll 5s linear infinite reverse;
 }
 
-/* Design for smaller screens */
-@media (max-width: 1350px) {
-    .wrapper {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-    }
 
+/* Design for tablets */
+@media (max-width: 1024px) {
     .container {
-      width: 100%;
-      position: relative;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .content-container {
-      width: 90%;
-      flex-direction: column; /* Stack content containers vertically on smaller screens */
+    .left-container,
+    .middle-container,
+    .right-container {
+        width: calc(50% - 20px);
     }
+}
 
-    .left-content, .right-content {
-        width: 100%; /* Full width for both left and right content on smaller screens */
-        margin: 1em; /* Add margin between content containers */
-    }
 
-    .right-content {
-        margin-left: 0; /* Remove left margin for right-content on smaller screens */
-    }
-
-    .content {
-        margin: 1em 0; /* Add margin between content blocks */
-        margin-left: 0.5em;
-        margin-top: 1.5em;
-    }
-
-    h1 {
-      margin-top: 0rem;
-    }
-
-    h2, h4{
-        font-size: 1.2rem;
-        padding: 0.5rem;
-    }
-
-    h4 {
-      width: 105%;
-    }
-
-    h6 {
-      margin-top: 1.5em;
-      margin-bottom: -4em;
-    }
-
-    hr {
-      width: 90%;
-    }
-
-    /* Adjust button width for smaller screens */
-    button {
+/* Design for phones */
+@media (max-width: 767px) {
+    .left-container,
+    .middle-container,
+    .right-container {
         width: 100%;
     }
 }
