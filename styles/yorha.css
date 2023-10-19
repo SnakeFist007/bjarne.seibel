@@ -203,6 +203,10 @@ img {
   footer {
     margin-top: -3em;
   }
+
+  button {
+    margin-bottom: 0.25em;
+  }
 }
 
 /* Design for phones */
@@ -232,7 +236,8 @@ img {
 
   button {
     display: block;
-    margin: 0 auto;    
+    margin: 0 auto;
+    margin-bottom: 0.75em;
   }
 
   .content {
