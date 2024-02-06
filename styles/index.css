@@ -92,6 +92,19 @@ p .header {
     margin: 1rem 0;
 }
 
+.cv-color {
+    filter: invert(50%) sepia(75%) saturate(1250%) hue-rotate(355deg) brightness(100%) contrast(100%);
+}
+
+.blinking {
+    animation: blink 1.25s ease-in infinite alternate;
+}
+
+@keyframes blink {
+    from { opacity: 1 }
+    to { opacity: 0.3 }
+}
+
 /* Mobile */
 @media screen and (max-width: 480px) {
     body {
