@@ -5,46 +5,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #0d1117;
+    background-image: url("/img/pattern.svg");
 }
 
 hr {
     border: 0;
     height: 1px;
-    background-color: #e49a56;
+    background-color: #170B0E;
     margin: 2rem 0;
-}
-
-h1 { 
-    font-size: 2rem 
-}
-
-a {
-   color: #e49a56; 
 }
 
 h1, p, span {
     font-family: 'Spline Sans Mono', Monaco, Courier, monospace;
-    color: #fff;
 }
 
-.btn {
-    border: 2px solid #e49a56;
-    border-radius: 10px;
-    padding: 15px;
-    background: #e49a56;
-    color: #222;
-    font-weight: bold;
+h1 { 
+    font-size: 2rem;
+    color: #2E151B;
 }
 
-.card {
-    margin-top: 10px;
-    border: 2px solid #e49a56;
-    border-radius: 10px;
-    padding: 15px;
-    background: #e49a56;
-    color: #222;
-    font-weight: bold;
+p, span, a {
+    color: #170B0E;
 }
 
 p .header {
@@ -54,6 +35,9 @@ p .header {
 
 /* IDs */
 #content {
+    background: #b7566d;
+    padding: 40px;
+    border-radius: 5px;
     max-width: 520px;
     width: 100%;
 }
@@ -93,7 +77,7 @@ p .header {
 }
 
 .cv-color {
-    filter: invert(50%) sepia(75%) saturate(1250%) hue-rotate(355deg) brightness(100%) contrast(100%);
+    filter: brightness(0) saturate(100%) invert(2%) sepia(21%) saturate(7135%) hue-rotate(324deg) brightness(98%) contrast(93%);
 }
 
 .blinking {
