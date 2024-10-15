@@ -1,49 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bjarne Seibel</title>
-    <meta name="author" content="Bjarne Seibel">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <meta name="author" content="Bjarne Seibel" />
 
     <!-- Search Engine Stuff -->
-    <meta name="title" content="Bjarne Seibel">
-    <meta name="description" content="Vocational trained Systems Engineer. Currently studying business informatics at the THM University of Applied Sciences.">
+    <meta name="title" content="Bjarne Seibel" />
+    <meta name="description" content="Ausgebildeter Fachinformatiker. Derzeit duales Studium der Wirtschaftsinformatik an der Technischen Hochschule Mittelhessen." />
 
     <!-- Fonts & Stylesheets -->
-    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="styles/index.css" />
 </head>
 
 <body>
-    <div id="content">
+
+    <!-- CONTAINS ALL -->
+    <div class="content">
+
+    <!-- WELCOME HEADER -->
+
+    <div class="welcome">
         <!-- Upper Section -->
-        <div class="top">
+        <div id="top">
             <div class="header">
                 <h1>Bjarne Seibel</h1>
-                <a href="cv.html">
-                    <img src="img/cv.svg" class="cv-color blinking" alt="Go to CV">
-                </a>
             </div>
 
             <p>
-                Vocational trained Systems Engineer. 
+                Ausgebildeter Fachinformatiker.
                 <br>
-                Currently pursuing a degree in Business Informatics at THM University of Applied Sciences.
-            </p> 
+                Derzeit duales Studium der Wirtschaftsinformatik an der Technischen Hochschule Mittelhessen.
+            </p>
         </div>
-        
+
         <hr>
-        
+
         <!-- Lower Section -->
-        <div class="body">
-            <p>Contact me on <a href="https://www.linkedin.com/in/bjarne-seibel" target="_blank">Linkedin</a>!</p>
+        <div id="body">
+            <p>Contact me on <a href="https://www.linkedin.com/in/bjarne-seibel" target="_blank">LinkedIn</a>!</p>
         </div>
+    </div>
+
+    <!-- CV SECTION -->
+
+    <div class="cv">
+        <!-- Brief Information -->
+        <div class="info-container">
+            <div id="personal-tags">
+                <h3>Systemtechniker</h3> -
+                <h3>Dualer Student</h3> -
+                <h3>INFJ</h3>
+            </div>
+
+            <h1><img src="img/placeholder.png" alt="Placeholder"/></h1>
+        </div>
+
+        <hr>
+
+        <!-- Current Tasks & Skills -->
+        <h2>Fähigkeiten</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Linux Server Administration</h3>
+                <ul>
+                    <li>Red Hat Enterprise Linux, Ubuntu Server</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <h3>Security Operations Center</h3>
+                <ul>
+                    <li>Security Information & Event Management</li>
+                    <li>Information Security Management</li>
+                    <li>Schutzniveauanalysen</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <h3>Mobile Device Management</h3>
+                <ul>
+                    <li>iOS: AirWatch, Apple VPP & DEP</li>
+                    <li>Android: Scalefusion</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <h3>Programmiersprachen</h3>
+                <ul>
+                    <li>Fortgschrittene Kenntnisse in Python, PowerShell & Java</li>
+                    <li>Grundlagen in HTML, CSS & JavaScript</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Work Experience -->
+        <div class="experience-container">
+            <h2>Berufserfahrung</h2>
+
+            <div class="experience">
+                <h3>2022 - heute | <a href="https://www.vb-mittelhessen.de" target="_blank">Volksbank Mittelhessen eG</a></h3>
+                <p>IT-Systemtechniker & Dualer Student</p>
+
+                <h4>Projekte</h4>
+                <ul>
+                    <li>Projekte der Praxisphasen: Evaluation & Implementierung einer CMDB-Software</li>
+                    <li>stellvertrende Projektleitung: SIEM / SOC</li>
+                </ul>
+
+                <h4>Aufgaben</h4>
+                <ul>
+                    <li>Administration von Linux-Servern</li>
+                    <li>Administration der mobilen Endgeräte</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <h3>2019 - 2022 | <a href="https://www.vb-mittelhessen.de" target="_blank">Volksbank Mittelhessen eG</a></h3>
+                <p>Ausbildung: Fachinformatiker - Systemintegration</p>
+
+                <h4>Projekte</h4>
+                <ul>
+                    <li>Abschlussprojekt: Migration eines Proxy-Servers</li>
+                    <li>Projektleitung: Migration der mobilen Endgeräte zu agree21MDM</li>
+                    <li>Fusion Raiffeisenbank Ebsdorfergrund 2019</li>
+                </ul>
+
+                <h4>Aufgaben</h4>
+                <ul>
+                    <li>Administration der mobilen Endgeräte</li>
+                    <li>Betreuung der Remote Access Infrastruktur</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <h3>2018 - 2019 | <a href="https://www.drk-biedenkopf.de" target="_blank">Volunta gGmbh (Deutsches Rotes Kreuz)</a></h3>
+                <p>Freiwilliges Soziales Jahr</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Education -->
+        <div class="education-container">
+            <h2>Ausbildung</h2>
+
+            <div class="education">
+                <h3>2022 - 2026 | <a href="https://www.thm.de/site/" target="_blank">Technische Hochschule Mittelhessen</a></h3>
+                <p>Bachelor of Arts - Wirtschaftsinformatik</p>
+
+                <ul>
+                    <li>Abschlussnote: -</li>
+                </ul>
+            </div>
+
+            <div class="education">
+                <h3>2019 - 2022 | <a href="https://www.ihk.de/giessen-friedberg/" target="_blank">IHK Gießen-Friedberg</a></h3>
+                <p>Fachinformatiker - Systemintegration</p>
+
+                <ul>
+                    <li>Abschlussnote: 2,0</li>
+                </ul>
+            </div>
+
+            <div class="education">
+                <h3>2010 - 2018 | <a href="https://www.lahntalschule.de/" target="_blank">Lahntalschule Biedenkopf</a></h3>
+                <p>Abitur</p>
+
+                <ul>
+                    <li>Abschlussnote: 3,3</li>
+                    <li>Leistungskurse: Biologie & Englisch</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Volunteering -->
+        <div class="volunteering-container">
+            <h2>Ehrenamt</h2>
+
+            <div class="volunteering">
+                <h3>2023 - 2024 | <a href="https://www.thm.de/site/" target="_blank">Technische Hochschule Mittelhessen</a></h3>
+                <p>Mentor für Erstsemesterstudenten</p>
+            </div>
+
+            <div class="volunteering">
+                <h3>2017 - 2018 | <a href="https://wp.budoclub-biedenkopf.de/" target="_blank">Budoclub Biedenkopf e.V.</a></h3>
+                <p>Mitglied des Vorstands, Jugendwart</p>
+            </div>
+
+            <div class="volunteering">
+                <h3>2015 - 2018 | <a href="https://wp.budoclub-biedenkopf.de/" target="_blank">Budoclub Biedenkopf e.V.</a></h3>
+                <p>Leiter des Kickbox-Kindertrainings</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONTACT SECTION -->
+
+    <div class="contact">
+        <h2>Kontakt</h2>
+
+        <p>Angaben gemäß §5 TMG:</p>
+
+        <ul>
+            <li>Bjarne Seibel</li>
+            <li>Lessingstraße 5</li>
+            <li>35039 Marburg</li>
+            <li>eMail: <a href="mailto:contact@bjarne-seibel.de">contact@bjarne-seibel.de</a></p>
+        </ul>
+
+        <hr>
+
+        <p>Gehostet auf <a href="https://github.com/SnakeFist007/bjarne.seibel" target="_blank">GitHub</a>.</p>
+
+        <br>
+
+        <p>Diese Webseite enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich.</p>
+    </div>
+
     </div>
 </body>
 
