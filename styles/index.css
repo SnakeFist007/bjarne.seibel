@@ -173,3 +173,53 @@ hr {
 .contact a {
     color: var(--text-color);
 }
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .welcome,
+    .cv,
+    .contact {
+        padding: 40px;
+        margin: 10px;
+        border-radius: 5px;
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 1.67em;
+    }
+    
+    h2 {
+        font-size: 1.33em;
+    }
+    
+    h3 {
+        font-size: 1.15em;
+    }
+    
+    .welcome h1 {
+        margin-bottom: 10px;
+    }
+    
+    .welcome p {
+        font-size: 0.9em;
+    }
+
+    .cv .skills-container .skill,
+    .cv .experience-container .experience,
+    .cv .education-container .education,
+    .cv .volunteering-container .volunteering {
+        margin-bottom: 1.5em;
+    }
+    
+    .cv p,
+    .cv li {
+        font-size: 0.9em;
+    }
+    
+    .contact p,
+    .contact li {
+        font-size: 0.9em;
+    }
+}
