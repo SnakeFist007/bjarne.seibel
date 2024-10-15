@@ -115,19 +115,22 @@ hr {
 
 .cv .info-container img {
     margin: 25px 10px 10px 10px;
+    border-radius: 10px;
 }
 
 .cv .skills-container,
 .cv .experience-container,
 .cv .education-container,
-.cv .volunteering-container {
+.cv .volunteering-container,
+.cv .qualification-container {
     line-height: 1.5;
 }
 
 .cv .skills-container .skill,
 .cv .experience-container .experience,
 .cv .education-container .education,
-.cv .volunteering-container .volunteering {
+.cv .volunteering-container .volunteering,
+.cv .qualification-container .qualification {
     margin-bottom: 3em;
 }
 
@@ -209,7 +212,8 @@ hr {
     .cv .skills-container .skill,
     .cv .experience-container .experience,
     .cv .education-container .education,
-    .cv .volunteering-container .volunteering {
+    .cv .volunteering-container .volunteering,
+    .cv .qualification-container .qualification {
         margin-bottom: 1.5em;
     }
     
