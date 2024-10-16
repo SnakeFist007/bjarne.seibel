@@ -123,7 +123,7 @@ hr {
 .cv .education-container,
 .cv .volunteering-container,
 .cv .qualification-container {
-    line-height: 1.5;
+    line-height: 1.67;
 }
 
 .cv .skills-container .skill,
@@ -148,6 +148,15 @@ hr {
     padding-right: 5px;
 }
 
+.ski-title,
+.exp-title,
+.edu-title,
+.vol-title,
+.qua-title {
+    padding-left: 24px;
+    background-image: linear-gradient(90deg, #ffffffcc, #ffffffff 10px, transparent 5px, transparent 20px);
+    margin-bottom: 7px;
+}
 
 /* CONTACT SECTION */
 .contact h2 {
